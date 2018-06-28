@@ -13,6 +13,9 @@ endif()
 project(zig C CXX)
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake ${CMAKE_MODULE_PATH})
 
+# Enable exporting of compilation database (compile_commands.json) for
+# Clang autocompletion.
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 set(ZIG_VERSION_MAJOR 0)
 set(ZIG_VERSION_MINOR 2)
